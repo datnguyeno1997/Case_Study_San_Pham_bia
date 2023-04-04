@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beer</title>
+    <link rel="stylesheet" href="beer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="product">
+        <div class="title">
+            <img src="image/gal-thyssenkrupp-1648134647-removebg-preview.png" alt="">
+            <p>HUDA ĐẬM TÌNH MIỀN TRUNG</p>
+
+        </div>
+        <div class="row">
+
+            <!-- <div class="product-items">
+                <div class="product-item">
+                    <img class="photos" src="image/-202212201544483450-removebg-preview.png" alt="">
+                </div>
+                <div class="quick-view">
+                    <button class="btn-quick-view">
+                        QUICK-WIEW
+                    </button>
+                </div>
+                <div class="size">
+                    <h1 class="category">100% Nguyên Chất Lúa Mạch</h1>
+                    <p class="beer-name">Huda Beer Lager</p>
+                    <p class="price">14,000đ</p>
+                </div>
+                </div> -->
+        </div>
+        <div>
+            <img id="Sum" src="https://cdn-icons-png.flaticon.com/128/3032/3032276.png" onclick="sum()" alt="">
+        </div>
+    </div>
+
+    <div class="cart">
+        <i id="Mis" class="fa fa-close" onclick="mis()"></i>
+
+        <h1>Cart</h1>
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Giá</th>
+                        <th>SL</th>
+                        <th>Tiền</th>
+                        <th>Chọn</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td style="display: flex;align-items: center;"><img style="width: 70px;"
+                                src="image/-202212201544483450-removebg-preview.png" alt="">Huda Beer Lager</td>
+                        <td>
+                            <p class="price">14,000<sup>đ</sup></p>
+                        </td>
+                        <td><input style="width: 30px; outline: none; text-align: center;" type="number" value="1"
+                                min="1"></td>
+                        <td style="cursor: pointer;">Xóa</td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div style="text-align: right;">
+                <p style="font-weight: bold; font-size: 20px;">Tổng tiền: <span id="totalMoney"></span></p>
+            </div>
+            <button style="font-size: 30px;">Chốt đơn</button>
+        </form>
+    </div>
+
+    <script src="beer.js">
+    </script>
+</body>
+
+</html>
